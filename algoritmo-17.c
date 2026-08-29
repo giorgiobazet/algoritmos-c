@@ -10,10 +10,11 @@ int main(){
     printf("\nEntre com o segundo valor inteiro: ");
     scanf("%d", &y);
 
-    if (x > y)
+    if (x > y){
         printf("\nO maior valor é: %d\n", x);
-    else
+    }
+    else{
         printf("\nO maior valor é: %d\n", y);
-
+    }
     return 0;
 }

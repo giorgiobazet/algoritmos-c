@@ -13,13 +13,16 @@ int main(){
     printf("\nEntre com o terceiro valor inteiro: ");
     scanf("%d", &z);
 
-    if ((y > x) && (z > x))
+    if ((y > x) && (z > x)){
         printf("\nO menor valor é: %d\n", x);
-    else if ((x > y) && (z > y))
+    }
+    else if ((x > y) && (z > y)){
         printf("\nO menor valor é: %d\n", y);
-    else
+    }
+    else{
         printf("\nO menor valor é: %d\n", z);
-
+    }
+    
     return 0;
 
 }

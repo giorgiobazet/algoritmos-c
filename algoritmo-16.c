@@ -7,10 +7,12 @@ int main(){
     printf("Entre com um valor inteiro: ");
     scanf("%d", &valor);
 
-    if (valor % 2 == 0)
+    if (valor % 2 == 0){
         printf("\nPar\n");
-    else
+    }
+    else{
         printf("\nÍmpar\n");
+    }
     
     return 0;
 }
