@@ -13,7 +13,7 @@ int main(){
     printf(" (4)              Divisão\n");
     printf(" (5)              Potenciação\n");
 
-    printf("\nEscolha o sabor da pizza: ");
+    printf("\nEscolha a operação: ");
     scanf("%d", &codigo);
 
     printf("Entre com o primeiro valor: ");
