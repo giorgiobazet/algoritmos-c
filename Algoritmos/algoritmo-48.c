@@ -1,22 +1,28 @@
 #include <stdio.h>
 #include <math.h>
 
-int main(){
+int main() {
     int qtd;
-    float s = 0.0, pi;
-    float den = pow(1,3);
+    float s = 0.0, pi, base = 1.0;
+    int sinal = 1; 
 
-    printf("Entre com a quantidade de termos: ");
+    printf("\nEntre com a quantidade de termos: ");
     scanf("%d", &qtd);
 
-    for (int i = 0; i <= qtd; i++){
-        
-        s += 1.0 / den; 
-        den += 2;
+    if (qtd <= 0) {
+        printf("A quantidade de termos deve ser positiva.\n");
+        return 0;
     }
 
-    pi = pow((s * 32), -3);
+    for (int i = 1; i <= qtd; i++) {
+        s += sinal * (1.0 / pow(base, 3));
+        base += 2.0;       
+        sinal = -sinal;    
+    }
 
-    printf("O valor de pi é: %.2f", pi);
+    pi = cbrt(s * 32.0);
 
+    printf("O valor aproximado de pi para %d termos é: %.5f\n", qtd, pi);
+
+    return 0;
 }
